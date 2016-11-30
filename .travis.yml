@@ -5,3 +5,5 @@ before_install:
  - docker build -t travis-play .
 script:
  - docker run -it --rm travis-play /test.sh
+notifications:
+  email: false
