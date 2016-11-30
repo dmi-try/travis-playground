@@ -15,4 +15,9 @@ if [ "${OUT}" = "${EXPECTED}" ]; then
   ERRORS=$(($ERRORS + 1))
 fi
 
+if [ $ERRORS -ne 0 ]; then
+  echo "Tests failed"
+else
+  echo "Tests passed"
+fi
 exit $ERRORS
